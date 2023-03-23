@@ -30,10 +30,9 @@ body {
         display: none;
     }
 }
-.card {
+main {
     display: flex;
-    flex-direction: row;
-    width: 60%;
+    width: 70%;
     background-color: var(--card-bg);
     border-radius: 10px;
 
@@ -50,10 +49,11 @@ body {
             flex-direction: row;
             justify-content: space-between;
             text-transform: uppercase;
-            column-gap: 10px;
+            gap: 10px;
         }
     }
     .right {
+        display: flex;
         width: 50%;
         background: url(images/image-header-desktop.jpg);
         border-top-right-radius: 10px;
@@ -62,14 +62,24 @@ body {
     }
 }
 
-@media (max-width: 1032px) {
-    .card {
-        min-width: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .right {
-        height: 100px;
-        background: url(images/image-header-mobile.jpg);
+@media (max-width: 900px) {
+    main {
+        width: 80%;
+        flex-direction: column-reverse;
+        margin: 50px 0 50px 0;
+
+        .left {
+            width: 100%;
+            text-align: center;
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+        .right {
+           height: 200px;
+           width: 100%;
+           border-bottom-right-radius: 0px;        border-top-left-radius: 10px;
+        }
     }
 }

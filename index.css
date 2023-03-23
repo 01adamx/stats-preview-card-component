@@ -41,20 +41,16 @@ body .attribution {
   display: none;
 }
 
-.card {
+main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 60%;
+  width: 70%;
   background-color: var(--card-bg);
   border-radius: 10px;
 }
 
-.card .left {
+main .left {
   padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,7 +63,7 @@ body .attribution {
   width: 50%;
 }
 
-.card .left .stats {
+main .left .stats {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,11 +75,13 @@ body .attribution {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-transform: uppercase;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
+  gap: 10px;
 }
 
-.card .right {
+main .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 50%;
   background: url(images/image-header-desktop.jpg);
   border-top-right-radius: 10px;
@@ -91,52 +89,31 @@ body .attribution {
   background-size: cover;
 }
 
-@media (max-width: 1032px) {
-  .card {
-    min-width: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media (max-width: 900px) {
+  main {
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 50px 0 50px 0;
+  }
+  main .left {
+    width: 100%;
+    text-align: center;
+  }
+  main .left .stats {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 20px;
   }
-  .right {
-    height: 100px;
-    background: url(images/image-header-mobile.jpg);
+  main .right {
+    height: 200px;
+    width: 100%;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
   }
 }
-
-/*
-@media screen and (max-width: 640px){
-    .card {
-      min-width: auto;
-      width: 90%;
-      max-height: 650px;
-      display: flex;
-      flex-direction :column;
-      border-radius: 10px;
-      margin: 0 auto;
-    }
-  
-    .left {
-      height: 500px;
-      width: 100%;
-      background-image: url("images/image-product-mobile.jpg");
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      background-position: center;
-      background-size: cover;
-    }
-  
-    .right {
-      height: 90%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      row-gap: 10px;
-      padding: 25px;
-    }
-  } */
 /*# sourceMappingURL=index.css.map */
