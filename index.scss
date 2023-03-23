@@ -63,6 +63,9 @@ main {
 }
 
 @media (max-width: 900px) {
+    body {
+        height: auto;
+    }
     main {
         width: 80%;
         flex-direction: column-reverse;

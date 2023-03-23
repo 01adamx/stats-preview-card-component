@@ -90,6 +90,9 @@ main .right {
 }
 
 @media (max-width: 900px) {
+  body {
+    height: auto;
+  }
   main {
     width: 80%;
     -webkit-box-orient: vertical;
