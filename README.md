@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/adamx23x/stats-preview-card-component](https://github.com/adamx23x/stats-preview-card-component)
-- Live Site URL: [https://adamx23x.github.io/stats-preview-card-component/](https://adamx23x.github.io/stats-preview-card-component/)
+- Solution URL: [https://github.com/01adamx/stats-preview-card-component](https://github.com/01adamx/stats-preview-card-component)
+- Live Site URL: [https://01adamx.github.io/stats-preview-card-component/](https://01adamx.github.io/stats-preview-card-component/)
 
 ## My process
 
